@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/grupPicture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/grupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/grupPicture"
+        android:text="Emre Hoca ile Android Eğitimi" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grupName"
+        android:layout_toRightOf="@id/grupPicture"
+        android:text="25 dk önce" />
+
+    <TextView
+        android:id="@+id/aciklama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grupPicture"
+        android:text="Harika bir resim"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/aciklama"
+        android:background="@drawable/animal_post"
+        android:id="@+id/paylasimResmi"
+        android:layout_marginBottom="10dp"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@mipmap/ic_launcher_round"
+        android:layout_below="@id/paylasimResmi"
+        android:id="@+id/likePicture"
+        android:layout_marginRight="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beğen"
+        android:id="@+id/likeText"
+        android:layout_below="@id/paylasimResmi"
+        android:layout_toRightOf="@id/likePicture"
+        android:layout_marginRight="10dp"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@mipmap/ic_launcher_round"
+        android:layout_below="@id/paylasimResmi"
+        android:layout_toRightOf="@id/likeText"
+        android:id="@+id/yorumPicture"
+        android:layout_marginRight="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yorum Yap"
+        android:id="@+id/yorumText"
+        android:layout_below="@id/paylasimResmi"
+        android:layout_toRightOf="@id/yorumPicture"/>
+</RelativeLayout>
